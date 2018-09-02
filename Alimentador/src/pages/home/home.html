@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar color="transparent">
+          <button ion-button menuToggle>
+              <ion-icon name="menu"></ion-icon>
+          </button>
+            <ion-title>Alimentador</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+
+      <ion-item>
+          <ion-label>Nome</ion-label>
+          <ion-input type="text"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+          <ion-label>Porte</ion-label>
+          <ion-select [(ngModel)]="porte">
+            <ion-option value="grande">Filhote</ion-option>
+            <ion-option value="medio">Adulto</ion-option>
+            <ion-option value="pequeno">Idoso</ion-option>
+          </ion-select>
+      </ion-item>
+
+      <ion-item>
+            <ion-label>Raça</ion-label>
+            <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Peso</ion-label>
+          <ion-select [(ngModel)]="peso">
+            <ion-option value="grande">0-20</ion-option>
+            <ion-option value="medio">20-40</ion-option>
+            <ion-option value="pequeno">40-80</ion-option>
+          </ion-select>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Periodo da ração</ion-label>
+          <ion-select [(ngModel)]="Periodo">
+              <ion-option value="periodo2">2x ao dia</ion-option>
+              <ion-option value="periodo3">3x ao dia</ion-option>
+              <ion-option value="periodo4">4x ao dia</ion-option>
+          </ion-select>
+      </ion-item>
+      
+    </ion-list>
+      
+    <div padding>   
+        <button ion-button color="secondary" icon-only class = "Enviar" style="padding-right: 10px">
+          <ion-icon name="paw" isActive="true"></ion-icon>
+        Enviar</button>
+    </div>
+
+  <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
+
+</ion-content>

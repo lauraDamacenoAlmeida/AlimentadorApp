@@ -1,0 +1,7 @@
+{
+  "name": "Alimentador",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
