@@ -18,8 +18,10 @@ import { HttpClient, HttpHandler,HttpClientModule } from '@angular/common/http';
     ListPage
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -29,6 +31,7 @@ import { HttpClient, HttpHandler,HttpClientModule } from '@angular/common/http';
   ],
   providers: [
     StatusBar,
+    TodosService,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
